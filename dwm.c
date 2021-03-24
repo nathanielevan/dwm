@@ -2458,22 +2458,33 @@ updatestatus(void)
 void
 updatesystrayicongeom(Client *i, int w, int h)
 {
+	int ih;
+	if (trayiconminh > bh) {
+		ih = bh;
+	}
+	else {
+		ih = bh - systrayvertpad * 2;
+		if (ih < trayiconminh) {
+			ih = trayiconminh;
+		}
+	}
+
 	if (i) {
-		i->h = bh;
+		i->h = ih;
 		if (w == h)
-			i->w = bh;
-		else if (h == bh)
+			i->w = ih;
+		else if (h == ih)
 			i->w = w;
 		else
-			i->w = (int) ((float)bh * ((float)w / (float)h));
+			i->w = (int) ((float)ih * ((float)w / (float)h));
 		applysizehints(i, &(i->x), &(i->y), &(i->w), &(i->h), False);
 		/* force icons into the systray dimensions if they don't want to */
-		if (i->h > bh) {
+		if (i->h > ih) {
 			if (i->w == i->h)
-				i->w = bh;
+				i->w = ih;
 			else
-				i->w = (int) ((float)bh * ((float)i->w / (float)i->h));
-			i->h = bh;
+				i->w = (int) ((float)ih * ((float)i->w / (float)i->h));
+			i->h = ih;
 		}
 	}
 }
@@ -2516,6 +2527,7 @@ updatesystray(void)
 	unsigned int x = m->mx + m->mw;
 	unsigned int sw = TEXTW(stext) - lrpad + systrayspacing;
 	unsigned int w = 1;
+	unsigned int iy;
 
 	if (!showsystray)
 		return;
@@ -2546,6 +2558,17 @@ updatesystray(void)
 			return;
 		}
 	}
+
+	if (trayiconminh > bh) {
+		iy = 0;
+	}
+	else {
+		iy = systrayvertpad;
+		if ((bh - trayiconminh) / 2 < systrayvertpad) {
+			iy = (bh - trayiconminh) / 2;
+		}
+	}
+
 	for (w = 0, i = systray->icons; i; i = i->next) {
 		/* make sure the background color stays the same */
 		wa.background_pixel  = scheme[SchemeNorm][ColBg].pixel;
@@ -2553,7 +2576,7 @@ updatesystray(void)
 		XMapRaised(dpy, i->win);
 		w += systrayspacing;
 		i->x = w;
-		XMoveResizeWindow(dpy, i->win, i->x, 0, i->w, i->h);
+		XMoveResizeWindow(dpy, i->win, i->x, iy, i->w, i->h);
 		w += i->w;
 		if (i->mon != m)
 			i->mon = m;
