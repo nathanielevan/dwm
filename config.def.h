@@ -121,10 +121,10 @@ static Key keys[] = {
     { 0, XF86XK_MonBrightnessDown,  spawn,                     SHCMD("light -U 5") },
     { 0,                            XK_Print,  spawn,          SHCMD("screenshot-full") },
     { ShiftMask,                    XK_Print,  spawn,          SHCMD("screenshot-sel") },
-    { 0, XF86XK_AudioRaiseVolume,   spawn,                     SHCMD("pactl set-sink-volume @DEFAULT_SINK@ +5%") },
-    { 0, XF86XK_AudioLowerVolume,   spawn,                     SHCMD("pactl set-sink-volume @DEFAULT_SINK@ -5%") },
-    { 0, XF86XK_AudioMute,          spawn,                     SHCMD("pactl set-sink-mute @DEFAULT_SINK@ toggle") },
-    { 0, XF86XK_AudioMicMute,       spawn,                     SHCMD("pactl set-source-mute @DEFAULT_SOURCE@ toggle") },
+    { 0, XF86XK_AudioRaiseVolume,   spawn,                     SHCMD("pactl set-sink-volume @DEFAULT_SINK@ +5%; pkill -RTMIN+10 dwmblocks") },
+    { 0, XF86XK_AudioLowerVolume,   spawn,                     SHCMD("pactl set-sink-volume @DEFAULT_SINK@ -5%; pkill -RTMIN+10 dwmblocks") },
+    { 0, XF86XK_AudioMute,          spawn,                     SHCMD("pactl set-sink-mute @DEFAULT_SINK@ toggle; pkill -RTMIN+10 dwmblocks") },
+    { 0, XF86XK_AudioMicMute,       spawn,                     SHCMD("pactl set-source-mute @DEFAULT_SOURCE@ toggle; pkill -RTMIN+10 dwmblocks") },
 };
 
 /* button definitions */
