@@ -15,7 +15,7 @@ Included in this build:
 - [Status on all monitors patch](https://dwm.suckless.org/patches/statusallmons)
 - [Status padding patch](https://dwm.suckless.org/patches/statuspadding)
 - [Systray patch](https://dwm.suckless.org/patches/systray)
-  * Includes personal modification to add vertical padding for systray icons, see commit [945bc3a](commit/945bc3ae8ff42de9fe9614527e85bf391a921693)
+  * Includes personal modification to add vertical padding for systray icons, see commit [945bc3a](https://github.com/nathanielevan/dwm/commit/945bc3ae8ff42de9fe9614527e85bf391a921693)
 
 Keybinds:
 - Super+d to launch dmenu_run.
