@@ -9,6 +9,7 @@ Included in this build:
 - [Autostart patch](https://dwm.suckless.org/patches/autostart)
 - [Fix borders patch](https://dwm.suckless.org/patches/alpha)
 - [Focus on click patch](https://dwm.suckless.org/patches/focusonclick)
+- [Fake signals patch](https://dwm.suckless.org/patches/fsignal)
 - [Full gaps toggle patch](https://dwm.suckless.org/patches/fullgaps)
 - [Per tag patch](https://dwm.suckless.org/patches/pertag)
 - [Push up/down patch](https://dwm.suckless.org/patches/push)
