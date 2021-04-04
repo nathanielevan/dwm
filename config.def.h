@@ -114,7 +114,6 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_c,      quit,           {0} },
     { MODKEY|ShiftMask,             XK_e,      spawn,          SHCMD("powermenu") },
     { MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD("setmonitor") },
     { 0, XF86XK_MonBrightnessUp,    spawn,                     SHCMD("light -A 5") },
@@ -142,4 +141,12 @@ static Button buttons[] = {
 	{ ClkTagBar,            0,              Button3,        toggleview,     {0} },
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
+};
+
+/* signal definitions */
+/* signum must be greater than 0 */
+/* trigger signals using `xsetroot -name "fsignal:<signum>"` */
+static Signal signals[] = {
+	/* signum       function        argument  */
+	{ 1,            quit,      {0} },
 };
