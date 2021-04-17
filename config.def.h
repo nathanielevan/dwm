@@ -70,7 +70,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-p", dmenuprompt, "-fn", dmenufont, "-nb", nord[0], "-nf", nord[4], "-sb", nord[9], "-sf", nord[0], NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *j4dmenucmd[] = { "j4-dmenu-desktop", "--dmenu", "dmenu -i -p \"run:\"", "--term", "st", NULL };
+static const char *j4dmenucmd[] = { "j4-dmenu-desktop", "--dmenu", "dmenu -i -p \"run:\"", "--term", "st", "--no-generic", NULL };
 
 #include <X11/XF86keysym.h>
 
@@ -81,8 +81,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
-    { MODKEY|ShiftMask,             XK_j,      pushdown,       {0} },
-    { MODKEY|ShiftMask,             XK_k,      pushup,         {0} },
+	{ MODKEY|ShiftMask,             XK_j,      pushdown,       {0} },
+	{ MODKEY|ShiftMask,             XK_k,      pushup,         {0} },
 	{ MODKEY|ShiftMask,             XK_i,      incnmaster,     {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_h,      setmfact,       {.f = -0.05} },
@@ -116,15 +116,15 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
     { MODKEY|ShiftMask,             XK_e,      spawn,          SHCMD("powermenu") },
-    { MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD("setmonitor") },
-    { 0, XF86XK_MonBrightnessUp,    spawn,                     SHCMD("light -A 5") },
-    { 0, XF86XK_MonBrightnessDown,  spawn,                     SHCMD("light -U 5") },
-    { 0,                            XK_Print,  spawn,          SHCMD("screenshot-full") },
-    { ShiftMask,                    XK_Print,  spawn,          SHCMD("screenshot-sel") },
-    { 0, XF86XK_AudioRaiseVolume,   spawn,                     SHCMD("pactl set-sink-volume @DEFAULT_SINK@ +5%; pkill -RTMIN+10 dwmblocks") },
-    { 0, XF86XK_AudioLowerVolume,   spawn,                     SHCMD("pactl set-sink-volume @DEFAULT_SINK@ -5%; pkill -RTMIN+10 dwmblocks") },
-    { 0, XF86XK_AudioMute,          spawn,                     SHCMD("pactl set-sink-mute @DEFAULT_SINK@ toggle; pkill -RTMIN+10 dwmblocks") },
-    { 0, XF86XK_AudioMicMute,       spawn,                     SHCMD("pactl set-source-mute @DEFAULT_SOURCE@ toggle; pkill -RTMIN+10 dwmblocks") },
+	{ MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD("setmonitor") },
+	{ 0, XF86XK_MonBrightnessUp,    spawn,                     SHCMD("light -A 5") },
+	{ 0, XF86XK_MonBrightnessDown,  spawn,                     SHCMD("light -U 5") },
+	{ 0,                            XK_Print,  spawn,          SHCMD("screenshot-full") },
+	{ ShiftMask,                    XK_Print,  spawn,          SHCMD("screenshot-sel") },
+	{ 0, XF86XK_AudioRaiseVolume,   spawn,                     SHCMD("pactl set-sink-volume @DEFAULT_SINK@ +5%; pkill -RTMIN+10 dwmblocks") },
+	{ 0, XF86XK_AudioLowerVolume,   spawn,                     SHCMD("pactl set-sink-volume @DEFAULT_SINK@ -5%; pkill -RTMIN+10 dwmblocks") },
+	{ 0, XF86XK_AudioMute,          spawn,                     SHCMD("pactl set-sink-mute @DEFAULT_SINK@ toggle; pkill -RTMIN+10 dwmblocks") },
+	{ 0, XF86XK_AudioMicMute,       spawn,                     SHCMD("pactl set-source-mute @DEFAULT_SOURCE@ toggle; pkill -RTMIN+10 dwmblocks") },
 };
 
 /* button definitions */
