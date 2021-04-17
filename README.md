@@ -29,3 +29,6 @@ Keybinds:
 - Super+Enter to set a window as the master window.
 - Super+Shift+q to close a window.
 - and many more, check out [config.def.h](config.def.h) for the complete configuration.
+
+Dependencies:
+- j4-dmenu-desktop (optional)
