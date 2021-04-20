@@ -5,8 +5,8 @@
 Included in this build:
 - Colour configuration based on the Nord colour scheme
 - [Actual full screen patch](https://dwm.suckless.org/patches/actualfullscreen)
-- [Always center patch](https://dwm.suckless.org/patches/alwayscenter)
 - [Autostart patch](https://dwm.suckless.org/patches/autostart)
+- [Center patch](https://dwm.suckless.org/patches/center)
 - [Fix borders patch](https://dwm.suckless.org/patches/alpha)
 - [Focus on click patch](https://dwm.suckless.org/patches/focusonclick)
 - [Fake signals patch](https://dwm.suckless.org/patches/fsignal)
