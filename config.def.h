@@ -6,7 +6,8 @@ static const Gap default_gap        = {.isgap = 1, .realgap = 12, .gappx = 12};
 static const unsigned int snap      = 0;       /* snap pixel */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayonleft = 0;   	/* 0: systray in the right corner, >0: systray on left of status text */
-static const unsigned int systrayspacing = 2;   /* systray spacing */
+static const unsigned int systrayspacing = 6;   /* systray spacing */
+static const unsigned int iconspacing = 3;      /* systray icon spacing */
 static const unsigned int systrayvertpad = 3;   /* systray vertical padding */
 static const unsigned int trayiconminh = 15;   /* tray icon minimum height */
 static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
