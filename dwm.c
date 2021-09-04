@@ -2517,14 +2517,11 @@ void
 updatesystrayicongeom(Client *i, int w, int h)
 {
 	int ih;
-	if (trayiconminh > bh) {
+	if (trayiconsize > bh) {
 		ih = bh;
 	}
 	else {
-		ih = bh - systrayvertpad * 2;
-		if (ih < trayiconminh) {
-			ih = trayiconminh;
-		}
+		ih = trayiconsize;
 	}
 
 	if (i) {
@@ -2617,14 +2614,11 @@ updatesystray(void)
 		}
 	}
 
-	if (trayiconminh > bh) {
+	if (trayiconsize > bh) {
 		iy = 0;
 	}
 	else {
-		iy = systrayvertpad;
-		if ((bh - trayiconminh) / 2 < systrayvertpad) {
-			iy = (bh - trayiconminh) / 2;
-		}
+		iy = (bh - trayiconsize) / 2;
 	}
 
 	for (w = 0, i = systray->icons; i; i = i->next) {
