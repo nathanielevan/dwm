@@ -69,7 +69,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-p", dmenuprompt, "-fn", dmenufont, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *j4dmenucmd[] = { "j4-dmenu-desktop", "--dmenu", "dmenu -i -p \"drun:\"", "--term", "st", "--no-generic", NULL };
+static const char *j4dmenucmd[] = { "j4-dmenu-desktop", "--dmenu", "dmenu -i -r -p \"drun:\"", "--term", "st", "--no-generic", NULL };
 
 #include <X11/XF86keysym.h>
 
