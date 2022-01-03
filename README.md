@@ -3,10 +3,11 @@
 [dwm](https://dwm.suckless.org/) is a dynamic window manager for X by [suckless](https://suckless.org). This repository hosts nathanielevan's dwm configuration, including a selection of patches hosted in [the suckless website](https://dwm.suckless.org/patches/) to make it usable.
 
 Included in this build:
-- Colour configuration based on the Nord colour scheme
+- Personal colour configuration
 - [Actual full screen patch](https://dwm.suckless.org/patches/actualfullscreen)
 - [Autostart patch](https://dwm.suckless.org/patches/autostart)
 - [Center patch](https://dwm.suckless.org/patches/center)
+- [Decoration hints patch](https://dwm.suckless.org/patches/decoration_hints/)
 - [Fix borders patch](https://dwm.suckless.org/patches/alpha)
 - [Focus on click patch](https://dwm.suckless.org/patches/focusonclick)
 - [Fake signals patch](https://dwm.suckless.org/patches/fsignal)
@@ -15,6 +16,7 @@ Included in this build:
 - [Push up/down patch](https://dwm.suckless.org/patches/push)
 - [Status on all monitors patch](https://dwm.suckless.org/patches/statusallmons)
 - [Status padding patch](https://dwm.suckless.org/patches/statuspadding)
+- [Swallow patch](https://dwm.suckless.org/patches/swallow/)
 - [Systray patch](https://dwm.suckless.org/patches/systray)
   * Includes personal modification to set tray icon size
 - [Urgent border patch](https://dwm.suckless.org/patches/urgentborder)
