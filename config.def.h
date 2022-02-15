@@ -17,8 +17,8 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const int focusonwheel       = 0;
 static const int horizpadbar        = 6;        /* horizontal padding for statusbar */
 static const int vertpadbar         = 10;        /* vertical padding for statusbar */
-static const char *fonts[]          = { "FantasqueSansMono Nerd Font:pixelsize=15:antialias=true:autohint=true" };
-static const char dmenufont[]       = "FantasqueSansMono Nerd Font:pixelsize=15:antialias=true:autohint=true";
+static const char *fonts[]          = { "FantasqueSansMono Nerd Font:size=10:antialias=true:autohint=true" };
+static const char dmenufont[]       = "FantasqueSansMono Nerd Font:size=10:antialias=true:autohint=true";
 static const char dmenuprompt[]     = "run:";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
