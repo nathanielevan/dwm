@@ -22,9 +22,9 @@ static const char dmenufont[]       = "FantasqueSansMono Nerd Font:pixelsize=15.
 static const char dmenuprompt[]     = "run:";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { "#fff6e6", "#0b1726", "#0b1726" },
-	[SchemeSel]  = { "#0b1726", "#e9986d", "#e9986d" },
-	[SchemeUrg]  = { "#fff6e6", "#c20f47", "#c20f47" },
+	[SchemeNorm] = { "#e2d3ba", "#282828", "#45403d" },
+	[SchemeSel]  = { "#282828", "#d8a657", "#d8a657" },
+	[SchemeUrg]  = { "#282828", "#ea6962", "#ea6962" },
 };
 
 /* tagging */
