@@ -7,7 +7,7 @@ static const unsigned int snap      = 0;       /* snap pixel */
 static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayonleft = 0;   	/* 0: systray in the right corner, >0: systray on left of status text */
-static const unsigned int systrayspacing = 8;   /* systray right side spacing */
+static const unsigned int systrayspacing = 10;   /* systray right side spacing */
 static const unsigned int iconspacing = 4;      /* systray icon spacing */
 static const unsigned int trayiconsize = 16;   /* tray icon size */
 static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
@@ -15,10 +15,10 @@ static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int focusonwheel       = 0;
-static const int horizpadbar        = 6;        /* horizontal padding for statusbar */
-static const int vertpadbar         = 10;        /* vertical padding for statusbar */
-static const char *fonts[]          = { "MesloLGS Nerd Font:size=10:antialias=true:autohint=true" };
-static const char dmenufont[]       = "MesloLGS Nerd Font:size=10:antialias=true:autohint=true";
+static const int horizpadbar        = 4;        /* horizontal padding for statusbar */
+static const int vertpadbar         = 8;        /* vertical padding for statusbar */
+static const char *fonts[]          = { "Iosevka Nerd Font:pixelsize=15:antialias=true:autohint=true" };
+static const char dmenufont[]       = "Iosevka Nerd Font:pixelsize=15:antialias=true:autohint=true";
 static const char dmenuprompt[]     = "run:";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
