@@ -130,7 +130,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_e,      spawn,          SHCMD("powermenu") },
-	{ MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD("setmonitor") },
+	{ MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD("setmonitor-dmenu") },
 	{ 0, XF86XK_MonBrightnessUp,    spawn,                     SHCMD("light -A 5") },
 	{ 0, XF86XK_MonBrightnessDown,  spawn,                     SHCMD("light -U 5") },
 	{ 0,                            XK_Print,  spawn,          SHCMD("screenshot-full") },
