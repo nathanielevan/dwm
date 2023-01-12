@@ -16,7 +16,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int focusonwheel       = 0;
 static const int horizpadbar        = 4;        /* horizontal padding for statusbar */
-static const int vertpadbar         = 8;        /* vertical padding for statusbar */
+static const int vertpadbar         = 6;        /* vertical padding for statusbar */
 // static const char *fonts[]          = { "FantasqueSansMono Nerd Font:pixelsize=15:antialias=true:autohint=true" };
 // static const char *fonts[]          = { "FuraMono Nerd Font:pixelsize=14:antialias=true:autohint=true" };
 // static const char *fonts[]          = { "InconsolataLGC Nerd Font:pixelsize=14:antialias=true:autohint=true" };
