@@ -23,6 +23,7 @@ static const int vertpadbar         = 6;        /* vertical padding for statusba
 // static const char *fonts[]          = { "Input Nerd Font:pixelsize=14:antialias=true:autohint=true" };
 static const char *fonts[]          = { "Iosevka Nerd Font:pixelsize=15:antialias=true:autohint=true" };
 // static const char *fonts[]          = { "JetBrainsMono Nerd Font:pixelsize=14:antialias=true:autohint=true" };
+// static const char *fonts[]          = { "JuliaMono Nerd Font:pixelsize=14:antialias=true:autohint=true" };
 // static const char *fonts[]          = { "MesloLGM Nerd Font:pixelsize=14:antialias=true:autohint=true" };
 // static const char *fonts[]          = { "mononoki Nerd Font:pixelsize=15:antialias=true:autohint=true" };
 // static const char *fonts[]          = { "NotoSansMono Nerd Font:pixelsize=14:antialias=true:autohint=true" };
