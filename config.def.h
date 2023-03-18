@@ -32,7 +32,7 @@ static const char dmenufont[]       = "Iosevka Nerd Font:pixelsize=15:antialias=
 static const char dmenuprompt[]     = "run:";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { "#e2d3ba", "#282828", "#45403d" },
+	[SchemeNorm] = { "#d4be98", "#282828", "#45403d" },
 	[SchemeSel]  = { "#282828", "#d8a657", "#d8a657" },
 	[SchemeUrg]  = { "#282828", "#ea6962", "#ea6962" },
 };
