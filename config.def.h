@@ -17,8 +17,10 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const int focusonwheel       = 0;
 static const int horizpadbar        = 4;        /* horizontal padding for statusbar */
 static const int vertpadbar         = 6;        /* vertical padding for statusbar */
+// static const char *fonts[]          = { "DMCAsansserif Nerd Font:pixelsize=15:antialias=true:autohint=true" };
 // static const char *fonts[]          = { "FantasqueSansMono Nerd Font:pixelsize=15:antialias=true:autohint=true" };
-// static const char *fonts[]          = { "FuraMono Nerd Font:pixelsize=14:antialias=true:autohint=true" };
+// static const char *fonts[]          = { "FiraCode Nerd Font:pixelsize=14:antialias=true:autohint=true" };
+// static const char *fonts[]          = { "Hack Nerd Font:pixelsize=13.5:antialias=true:autohint=true" };
 // static const char *fonts[]          = { "InconsolataLGC Nerd Font:pixelsize=14:antialias=true:autohint=true" };
 // static const char *fonts[]          = { "Input Nerd Font:pixelsize=14:antialias=true:autohint=true" };
 static const char *fonts[]          = { "Iosevka Nerd Font:pixelsize=15:antialias=true:autohint=true" };
