@@ -17,20 +17,15 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const int focusonwheel       = 0;
 static const int horizpadbar        = 4;        /* horizontal padding for statusbar */
 static const int vertpadbar         = 6;        /* vertical padding for statusbar */
-// static const char *fonts[]          = { "DMCAsansserif Nerd Font:pixelsize=15:antialias=true:autohint=true" };
-// static const char *fonts[]          = { "FantasqueSansMono Nerd Font:pixelsize=15:antialias=true:autohint=true" };
-// static const char *fonts[]          = { "FiraCode Nerd Font:pixelsize=14:antialias=true:autohint=true" };
-// static const char *fonts[]          = { "Hack Nerd Font:pixelsize=13.5:antialias=true:autohint=true" };
-// static const char *fonts[]          = { "InconsolataLGC Nerd Font:pixelsize=14:antialias=true:autohint=true" };
-// static const char *fonts[]          = { "Input Nerd Font:pixelsize=14:antialias=true:autohint=true" };
-static const char *fonts[]          = { "Iosevka Nerd Font:pixelsize=15:antialias=true:autohint=true" };
-// static const char *fonts[]          = { "JetBrainsMono Nerd Font:pixelsize=14:antialias=true:autohint=true" };
-// static const char *fonts[]          = { "JuliaMono Nerd Font:pixelsize=14:antialias=true:autohint=true" };
-// static const char *fonts[]          = { "MesloLGM Nerd Font:pixelsize=14:antialias=true:autohint=true" };
-// static const char *fonts[]          = { "mononoki Nerd Font:pixelsize=15:antialias=true:autohint=true" };
-// static const char *fonts[]          = { "NotoSansMono Nerd Font:pixelsize=14:antialias=true:autohint=true" };
-// static const char *fonts[]          = { "VictorMono Nerd Font:pixelsize=15:antialias=true:autohint=true" };
-static const char dmenufont[]       = "Iosevka Nerd Font:pixelsize=15:antialias=true:autohint=true";
+// static const char *fonts[]          = { "DMCASansSerif Nerd Font Propo:pixelsize=15:antialias=true:autohint=true" };
+// static const char *fonts[]          = { "FantasqueSansM Nerd Font Propo:pixelsize=15:antialias=true:autohint=true" };
+// static const char *fonts[]          = { "FiraCode Nerd Font Propo:pixelsize=14:antialias=true:autohint=true" };
+// static const char *fonts[]          = { "Hack Nerd Font Propo:pixelsize=13.5:antialias=true:autohint=true" };
+// static const char *fonts[]          = { "InconsolataLGC Nerd Font Propo:pixelsize=14:antialias=true:autohint=true" };
+static const char *fonts[]          = { "Iosevka Nerd Font Propo:pixelsize=15:antialias=true:autohint=true" };
+// static const char *fonts[]          = { "JetBrainsMono Nerd Font Propo:pixelsize=14:antialias=true:autohint=true" };
+// static const char *fonts[]          = { "NotoSansM Nerd Font Propo:pixelsize=14:antialias=true:autohint=true" };
+static const char dmenufont[]       = "Iosevka Nerd Font Propo:pixelsize=15:antialias=true:autohint=true";
 static const char dmenuprompt[]     = "run:";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
