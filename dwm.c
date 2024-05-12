@@ -1134,7 +1134,7 @@ getsystraywidth()
 	unsigned int w = 0;
 	Client *i;
 	if(showsystray)
-		for(i = systray->icons; i; w += i->w + (w ? iconspacing : 0), i = i->next) ;
+		for(i = systray->icons; i; w += i->w + (w ? iconspacing : systrayspacing), i = i->next) ;
 	return w ? w + systrayspacing : 1;
 }
 
@@ -2718,7 +2718,7 @@ updatesystray(void)
 	Client *i;
 	Monitor *m = systraytomon(NULL);
 	unsigned int x = m->mx + m->mw;
-	unsigned int sw = TEXTW(stext) - lrpad;
+	unsigned int sw = TEXTW(stext) - lrpad + systrayspacing;
 	unsigned int w = 1;
 	unsigned int iy;
 
@@ -2764,7 +2764,7 @@ updatesystray(void)
 		wa.background_pixel  = scheme[SchemeNorm][ColBg].pixel;
 		XChangeWindowAttributes(dpy, i->win, CWBackPixel, &wa);
 		XMapRaised(dpy, i->win);
-		w += w ? iconspacing : 0;
+		w += w ? iconspacing : systrayspacing;
 		i->x = w;
 		XMoveResizeWindow(dpy, i->win, i->x, iy, i->w, i->h);
 		w += i->w;
