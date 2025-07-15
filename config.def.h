@@ -79,9 +79,9 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-p", dmenuprompt, "-fn", dmenufont, NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *j4dmenucmd[] = { "j4-dmenu-desktop", "--dmenu", "dmenu -i -r -p \"drun:\"", "--term", "st", "--no-generic", NULL };
-// static const char *rofidruncmd[] = { "rofi", "-show", "drun", "-modi", "drun,run,window,ssh", NULL };
-// static const char *rofiruncmd[] = { "rofi", "-show", "run", "-modi", "drun,run,window,ssh", NULL };
-// static const char *rofiwincmd[] = { "rofi", "-show", "window", "-modi", "drun,run,window,ssh", NULL };
+// static const char *rofidruncmd[] = { "rofi", "-show", "drun", "-modi", "drun,run,window,ssh", "-show-icons", NULL };
+// static const char *rofiruncmd[] = { "rofi", "-show", "run", "-modi", "drun,run,window,ssh", "-show-icons", NULL };
+// static const char *rofiwincmd[] = { "rofi", "-show", "window", "-modi", "drun,run,window,ssh", "-show-icons", NULL };
 
 #include <X11/XF86keysym.h>
 
