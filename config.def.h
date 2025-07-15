@@ -29,9 +29,9 @@ static const char dmenufont[]       = "Iosevka Nerd Font Propo:pixelsize=15:anti
 static const char dmenuprompt[]     = "run:";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { "#d4be98", "#282828", "#45403d" },
-	[SchemeSel]  = { "#282828", "#d8a657", "#d8a657" },
-	[SchemeUrg]  = { "#282828", "#ea6962", "#ea6962" },
+	[SchemeNorm] = { "#ebdbb2", "#282828", "#928374" },
+	[SchemeSel]  = { "#282828", "#d79921", "#d79921" },
+	[SchemeUrg]  = { "#282828", "#cc241d", "#cc241d" },
 };
 
 /* tagging */
